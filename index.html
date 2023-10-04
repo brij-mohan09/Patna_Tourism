@@ -1,62 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Patna Tourism</title>
-        <!--border style and footer alignmentwith internal css-->
-        <style>
-            table,td {
-               border: 1px solid black;
-               border-collapse: collapse; 
-               text-align: center;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patna Tourism</title>
+    <!--border style and footer alignmentwith internal css-->
+    <style>
+        table,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Media queries for responsive design -->
+    <style>
+        /* For screens smaller than 768px wide (e.g., mobile devices) */
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
             }
-            footer {
-                text-align: center;
-                text-decoration: underline;
+            td {
+                display: block;
+                width: 100%;
             }
-        </style>
-    </head>
-    <body>
-        <!--navigation bar with each text page related to it-->
-        <nav>
-            <a href ="./src/about_us.html">About Us</a>
-            <a href ="./src/contact_us.html">Contact Us</a>
-            <a href ="./src/climate.html">Climate</a>
-        </nav><br>
-        <h1><i>Patna Tourism</i></h1>
-        <div>
-            <h3><u><i>About Patna :</i></u></h3>
-        <p>The capital city of Bihar located at the southern bank of the river Ganga, Patna is the largest town of the state. The history of this city stretches beyond 2500 years back. The ancient name of this city was Pataliputra which remained as the capital of Magadha under multiple dynasties for about thousand years.</p>
-        </div>
-        <!--images tags which align in table with border-->
-        <div>
-            <h3><u>Images :</u></h3>
-            <table>
-                <tr>
-                    <td><img src="./src/Buddha Smriti Park.jpeg" alt="Buddha Smriti Park" width="240" height="240"></td>
-                    <td><img src="./src/Gandhi Setu.jpeg" alt="Gandhi Setu" width="240" height="240"></td>
-                    <td><img src="./src/Gol Ghar.jpeg" alt="Gol Ghar" width="240" height="240"></td>
-                    <td><img src="./src/Mahavir Mandir.jpeg" alt="Mahavir Mandir" width="240" height="240"></td>
-                    <td><img src="./src/Sabhyata Dwar.jpeg" alt="Sabhyata Dwar" width="240" height="240"></td>
-                </tr>
-                <tr>
-                    <td><a href="https://en.wikipedia.org/wiki/Buddha_Smriti_Park">Buddha Smriti Park</a></td>
-                    <td><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi_Setu">Gandhi Setu</a></td>
-                    <td><a href="https://en.wikipedia.org/wiki/Golghar">Gol Ghar</a></td>
-                    <td><a href="https://en.wikipedia.org/wiki/Mahavir_Mandir">Mahavir Mandir</a></td>
-                    <td><a href="https://en.wikipedia.org/wiki/Sabhyata_Dwar">Sabhyata Dwar</a></td>
-                </tr>
-            </table>
-        </div>
-        <!--this is iframe section which include about us detail under it-->
-        <div>
-            <h3><u>History of Patna</u></h3>
+            img {
+                width: 100%;
+                height: auto;
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+        /* For screens larger than 768px wide (e.g., tablets and desktops) */
+        @media screen and (min-width: 768px) {
+            table {
+                width: auto; /* Restore the default width */
+            }
+            td {
+                display: table-cell;
+                width: auto; /* Restore the default width */
+            }
+            img {
+                width: 240px; /* Set a fixed width for images */
+                height: 240px;
+            }
+            iframe {
+                width: 1420px; /* Set a fixed width for the iframe */
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--navigation bar with each text page related to it-->
+    <nav>
+        <a href ="./src/about_us.html">About Us</a>
+        <a href ="./src/contact_us.html">Contact Us</a>
+        <a href ="./src/climate.html">Climate</a>
+    </nav><br>
+    <h1><i>Patna Tourism</i></h1>
+    <div>
+        <h3><u><i>About Patna :</i></u></h3>
+        <p>
+            The capital city of Bihar located at the southern bank of the river Ganga, Patna is the largest town of the state. The history of this city stretches beyond 2500 years back. The ancient name of this city was Pataliputra which remained as the capital of Magadha under multiple dynasties for about thousand years.
+        </p>
+    </div>
+    <!--images tags which align in table with border-->
+    <div>
+        <h3><u>Images :</u></h3>
+        <table>
+            <tr>
+                <td><img src="./src/Buddha Smriti Park.jpeg" alt="Buddha Smriti Park" width="240" height="240"></td>
+                <td><img src="./src/Gandhi Setu.jpeg" alt="Gandhi Setu" width="240" height="240"></td>
+                <td><img src="./src/Gol Ghar.jpeg" alt="Gol Ghar" width="240" height="240"></td>
+                <td><img src="./src/Mahavir Mandir.jpeg" alt="Mahavir Mandir" width="240" height="240"></td>
+                <td><img src="./src/Sabhyata Dwar.jpeg" alt="Sabhyata Dwar" width="240" height="240"></td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Buddha_Smriti_Park">Buddha Smriti Park</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi_Setu">Gandhi Setu</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Golghar">Gol Ghar</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Mahavir_Mandir">Mahavir Mandir</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Sabhyata_Dwar">Sabhyata Dwar</a></td>
+            </tr>
+        </table>
+    </div>
+    <!--this is iframe section which include about us detail under it-->
+    <div>
+        <h3><u>History of Patna</u></h3>
         <iframe src="./src/about_us.html" height="200" width="1420"></iframe>
-        </div>
-        <!--this is footer section which include tourism text in it-->
-        <div>
-            <footer>
-                 <p>Patna Tourism &copy 2023.</p>
-            </footer>
-        </div>
-    </body>
+    </div>
+    <!--this is footer section which include tourism text in it-->
+    <div>
+        <footer>
+            <p>Patna Tourism &copy 2023.</p>
+        </footer>
+    </div>
+</body>
 </html>
